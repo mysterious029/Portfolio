@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="viewport" content=="width-device-width, intial-scale=1.0">
+        <title>MUKESH MANDAL-WEB DEVELOPER</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <boby>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                  <li><a href="/index.html"><button class="btn" onclick="Home()"> Home</button></a></li>
+                  <li><a href="/intro.html" target=""><button class="btn" onclick="intro()"> My Intro</button></a></li>
+                  <li><a href="/blog.html" target=""><button class="btn" onclick="Blog()">Project</button></a></li>
+                  <li><a href="/services.html" target=""><button class="btn" onclick="services()">Services</button></a></li>
+                  <li><a href="/contact.html" target=""><button class="btn" onclick="contact()">Contact</button> </a></li>
+              </ul> 
+            </nav>
+        </div>
+        <div class="main">
+          <div class="hamburger">
+            <img src="1.png" alt="" class="hamb" width="40">
+            <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(41, 117, 194)"><b></b></p>
+            <img src="cross.png" alt="" class="cross" width="25">
+        </div>
+           <div class="contactform">
+            <h1>Contact me for Work/General equiries</h1><br>
+            <h2>Let's get in touch. Send me a message:</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="clientName" class="form-label">Name</label>
+                    <input type="Name" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                  </div>
+                <div class="mb-3">
+                  <label for="clientemail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="clientphone" class="form-label">Phone</label>
+                    <input type="phone" class="form-control" id="clientphone">
+                    <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+                  </div>
+                <div class="mb-3">
+                    <label for="clientEnquiry" class="form-label">Enquiry</label>
+                    <input type="Enquiry" class="form-control" id="clientEnqiry">
+                  </div>
+                  <h4>IF YOU WANT TO SUBMIT ANY FILE :</h4>
+                    <hr style="width: 245px;"><br>
+                    <label for="myfile">SELECT A FILE</label>
+                    <input type="file" id="myfile" name="myfile" ><br><br>
+                <div class="mb-3" id="form-check">
+                  <input type="checkbox" class="form-check-input" id="isclient">
+                  <label class="form-check-label" for="isclient">I want you to work on a project with me</label>
+                </div>
+                <button type="submit" class="btn btn-sm" onclick="send()">Send Me</button>
+              </form>
+           </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+    </boby>
+</html>
